@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Proyectos"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clases"
+	}
+}

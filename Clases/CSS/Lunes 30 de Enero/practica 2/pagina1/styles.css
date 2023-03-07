@@ -1,0 +1,93 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+.cuerp{
+    grid-column: 1px / -1px;
+    grid-row: 1/-1;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction:column;
+}
+.cabe{
+    background-color: antiquewhite;
+    left: 150px;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 150px;
+}
+.des{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 18px;
+}
+.nomb{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 64px;
+}
+.presen{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 48px;
+}
+.imagen{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2/3 ;
+    grid-row: 1/-1;
+    background-color: antiquewhite;
+}
+img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+input{
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 50px;
+    outline-offset: 3px;
+    border-radius: 10%;
+    padding: 12px 14px;
+    font-size: x-large;
+    background: rgb(24, 24, 24);
+    color: white;
+    transition: 0.5s;
+    outline: 2px solid rgb(44, 44, 44);
+    font-family: 'Gill Sans', 'Gill Sans MT',
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+input:hover{
+    background-color:#F7890C;
+    border-radius: 2em;
+    outline: 2px solid rgb(44, 44, 44);
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+
+}

@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+#hob , #idio{
+    background-color: green;
+    color: white;
+}
+#fu , #cinc, #core{
+    color: aqua;
+}
+#nosoy{
+    text-decoration: line-through;
+}

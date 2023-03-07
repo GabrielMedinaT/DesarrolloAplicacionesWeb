@@ -1,0 +1,65 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.cont{
+    text-align: center;
+    display: grid;
+    width: 1000px;
+    height: 80vh;
+    grid-template-columns: repeat(4,1fr); /*! Es lo mismo que : 1fr 1fr 1fr 1fr  */
+    grid-template-rows: repeat(5,1fr);   
+    gap: 20px; 
+}
+.el1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background-color: aqua;
+    grid-column-start:2 ;
+    grid-column-end: -1;
+    grid-row-start:1 ;
+    grid-row-end: -1;
+}
+.el2{
+    background-color: blue;
+    /* grid-column-start:3 ;
+    grid-column-end: 5; */
+    grid-column: 3/5 ;
+    /* grid-row-start:3 ;
+    grid-row-end: 5; */
+    grid-row: 3/5 ;
+}
+.el3{
+    background-color: blueviolet;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+
+}
+.el4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: yellow;
+    grid-row-start:2 ;
+    grid-row-end:4 ;
+    gap: 10px;
+    
+}
+.h4{
+    grid-row: 1/1 ;
+    grid-column: 1/3 ;
+    background-color: blue;
+}
+.h41{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-color: coral;
+}

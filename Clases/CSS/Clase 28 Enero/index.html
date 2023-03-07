@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Documento</title>
+  </head>
+  <script type='text/javascript'>
+    document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+    }, false);
+    document.addEventListener("copy", function(event){
+    // Change the copied text if you want
+    event.clipboardData.setData("text/plain", "Ni se te ocurra copiar de esta página");
+    
+    // Prevent the default copy action
+    event.preventDefault();
+}, false);
+</script>
+  <body>
+    <header>
+      <div class="lognom">
+        <div class="logo">
+          <img src="./recursos/imagenes/logo.png" alt="" />
+        </div>
+        <div class="nomb"><h3>Mistery</h3></div>
+      </div>
+      <nav>
+        <a href=""> <div class="lk">Home</div></a>
+        <a href=""><div class="lk">Services</div></a>
+        <a href=""><div class="lk">Team</div></a>
+        <a href=""><div class="lk">Pricing</div></a>
+        <a href=""><div class="lk">Testimonial</div></a>
+        <a href=""><div class="lk">Contact</div></a>
+      </nav>
+    </header>
+    <main>
+      <div class="contenido">
+        <div class="minombre"><h3>Mi nombre</h3></div>
+        <div class="nombre"><h2>Gabriel Medina</h2></div>
+        <div class="trabajo">
+          <div class="t1"><h2>Soy</h2></div>
+          <div class="t2"><h2>Diseñador Web</h2></div>
+        </div>
+        <div class="parrafo">
+          <p>
+            En un puerto italiano al pie de las montañas vive nuestro amigo
+            marco en una humilde morada Se levanta muy temprano para ayudar a su
+            buena mamá Pero un día la tristeza llega hasta su corazón Mamá tiene
+            que partir cruzando el mar a otro país
+          </p>
+        </div>
+        <div class="botones">
+          <div class="b1">
+            <input type="button" value="Sobre mi" />
+          </div>
+          <div class="b2">
+            <input type="button" value="Saber mas" />
+          </div>
+        </div>
+      </div>
+      <div class="imagen">
+        <img src="./recursos/imagenes/Business.png" alt="" />
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

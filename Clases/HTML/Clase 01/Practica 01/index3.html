@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inmobiliaria Pepito Pérez</h1>
+      <nav></nav>
+    </header>
+    <main>
+      <form action="">
+        <div class="cent">
+          <label for="numeromin">Precio mínimo</label>
+          <input
+            type="number"
+            id="numeromin"
+            name="numeromin"
+            min="10000"
+            max="5000000"
+          />
+          <label for="numeromax">Precio Máximo</label>
+          <input
+            type="number"
+            id="numeromax"
+            name="numeromax"
+            min="5000000"
+            max="10000000"
+            required
+          />
+          <label for="año">Año de Construcción</label>
+          <input
+            type="number"
+            id="año"
+            name="año"
+            min="10000"
+            max="9999999"
+            required
+          />
+          <br />
+        </div>
+        <div class="cent">
+          <label for="zona" id="sona">Zona</label>
+          <select name="zona" id="zona">
+            <datalist id="zona">
+              <option value="triana">Triana</option>
+              <option value="arenales">Arenales</option>
+              <option value="guanarteme">Guanarteme</option>
+              <option value="conosur">Cono Sur</option>
+              <option value="alcalavaneras">Alcalavaneras</option>
+            </datalist>
+          </select>
+        </div>
+        <div class="cent">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

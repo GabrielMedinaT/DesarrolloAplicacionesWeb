@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3 - Formularios en HTML</title>
+  </head>
+  <body>
+    <h1>Formularios HTML</h1>
+    <form action="">
+      <!-- caja de texto -->
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" />
+      </div>
+      <!-- caja de texto -->
+      <div>
+        <label for="Apellidos">Apellidos</label>
+        <input
+          type="text"
+          name="Apellidos"
+          id="Apellidos"
+          placeholder="Apellidos"
+        />
+      </div>
+      <!-- caja de email -->
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email solo" />
+      </div>
+      <!-- caja numérica -->
+      <div>
+        <label for="year">Año de nacimiento</label>
+        <input type="number" name="year" id="year" />
+      </div>
+      <!-- caja de fecha -->
+      <div>
+        <label for="date">Fecha</label>
+        <br />
+        <input type="date" name="date" id="date" />
+      </div>
+      <!-- caja de selección de color -->
+      <div>
+        <label for="color">Elige un color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <br />
+      <!-- caja de texto con sugerencia -->
+      <div>
+        <label for="seleccion">Animal de compañia</label>
+        <input type="text" list="mascota" name="mascotas" id="seleccion" />
+        <datalist id="mascota">
+          <option value="Gato">Gato</option>
+          <option value="Perro">Perro</option>
+          <option value="Periquito">Periquito</option>
+          <option value="Elefante">Elefante</option>
+        </datalist>
+      </div>
+      <br />
+      <!-- caja de selección  -->
+      <div>
+        <label for="mascotas">Elige otra mascota </label>
+        <select name="mascotas" id="mascotas">
+          <datalist id="mascotas">
+            <option></option>
+            <option value="Gato" selected>Gato</option>
+            <option value="Perro">Perro</option>
+            <option value="Periquito">Periquito</option>
+            <option value="Elefante">Elefante</option>
+          </datalist>
+        </select>
+      </div>
+      <br />
+      <!-- chekbox -->
+      <div>
+        <label for="frontend">¿Desarrollador Frontend?</label>
+        <input type="checkbox" name="frontend" id="frontend" />
+      </div>
+      <br />
+      <!-- raddiobuttons -->
+      <div>
+        <input type="radio" name="color" id="blanco" />
+        <label for="blanco">Balnco</label>
+      </div>
+      <div>
+        <input type="radio" name="color" id="negro" />
+        <label for="negro">Negro</label>
+      </div>
+    </form>
+  </body>
+</html>

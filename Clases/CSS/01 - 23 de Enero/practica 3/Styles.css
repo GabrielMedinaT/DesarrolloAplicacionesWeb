@@ -1,0 +1,69 @@
+/* General */
+*{
+    background-color: #efefef;
+    font-family: 'Franklin Gothic Medium',
+    'Arial Narrow', Arial, sans-serif;
+}
+/* Cabecera */
+header{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: 800;
+    color: #276e90;
+}
+/* links en general */
+.link{
+    color:#0a3143;
+    font-size: x-large;
+    text-align: center;
+    }
+.link:hover{
+    color:#276e90;
+}
+/* seccion de fotos */
+#fotos{
+    text-align: center;
+    color: #276e90;
+}
+.ini{
+    font-weight: 400;
+    color: black;
+}
+.ini:hover{
+    color:#276e90
+}
+/* Para el listado  */
+#listado ul:hover{
+    color: #276e90;
+    cursor:context-menu;
+}
+ul li:hover{
+    color:#0a3143;
+}
+#listado{
+    font-weight: 400;
+    font-size: large;
+}
+#altas{
+    text-align: center;
+    font-size: large;  
+    font-style: oblique;  
+}
+form div:hover{
+    color: #276e90;
+}
+form select:hover{
+    color:#0a3143;
+    background-color:#276f9063;
+}
+input [type = "number"]:focus{
+    background-color: #0a3143;
+}
+#pie{
+    text-align:right;
+}
+.datos{
+    text-align: center;
+}

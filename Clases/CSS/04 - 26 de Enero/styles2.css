@@ -1,0 +1,32 @@
+.contenedor{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+}
+.contenedor img{
+    width: 100%;
+    opacity: 0.6;
+}
+.inferior-izquierda{
+    position: absolute;
+    bottom: 200px;
+    left: 16px;
+}
+.inferior-derecha{
+    position: absolute;
+    bottom: 200px;
+    right:  16px;
+}
+.superior-izquierda{
+    text-align: left;
+    position: absolute;
+    top: 50vh;
+    left: 65vh;
+}
+.superior-derecha{
+    position: absolute;
+    top: 20px;
+    right: 16px;
+}

@@ -1,0 +1,109 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+
+    font-size: 18px;
+    background-color: burlywood; 
+    font-family: 'Montserrat', sans-serif;  
+    
+}
+/* Encabezado 1 */
+#enc1{
+    color:darkgoldenrod;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+/* Encabezado  */
+h1 {
+    color:brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    margin-left: 0px;
+    background-color: aqua;
+    font-family: 'Montserrat', sans-serif;
+}
+/* parrafos en general sin ID  */
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    text-shadow: 2ch;
+    margin: 8%;
+    margin-left: 10%;
+    background-color: antiquewhite;
+    text-align: justify;
+    font-size: 45px;
+    font-weight: 900;   
+    /* text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: yellowgreen;
+    text-decoration-thickness: 5px; */
+    text-decoration: underline dashed  green 5px;
+    line-height: 150%;
+    letter-spacing: 5px;
+    
+}
+/* parrafo con ID p1 */
+#p1{
+    font-style: italic;
+    color: crimson;
+    text-align: center;
+    background-color: yellow; 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    margin-left: 0px;
+    background-color: aqua;
+    text-decoration: underline wavy  blue 5px;
+    border: 15px;
+    border-radius:  15px ;
+    border-color: black;
+    border-style:double;
+    
+
+    
+}
+#sec1 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: large;
+    text-shadow: 10cm;
+    font-size: 45px;
+}
+#sec2 ¨{
+    margin-bottom: 8%;
+}
+.zona1{
+    color: cadetblue;
+    text-align: center;
+    font-size: 45px;
+}
+.zona2 {
+    color: blueviolet;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.zona3 {
+    color: chartreuse;
+}
+form {
+    color: aqua;
+}
+button {
+    color: inherit;
+    align-items: inherit;
+}
+.boton{
+    color: blue;
+    align-items: center;
+}
+/* Unidades de medida en CSS 
+10px
+1em
+1rem
+1ich
+12%
+10vh
+10vw */

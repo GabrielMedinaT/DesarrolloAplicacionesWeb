@@ -1,0 +1,13 @@
+#una {
+    background-color:coral;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+#total{
+    display: flex;
+    justify-content: center;
+
+}

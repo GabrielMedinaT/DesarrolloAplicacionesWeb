@@ -1,0 +1,62 @@
+*,
+*:ºafter,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./recursos/fondo.jpg);
+}
+nav{
+    position:fixed;
+    z-index: 1;
+}
+.cont{
+    background-color: orangered;
+    display: flex;
+    width: 100vw;
+    height: 105px;
+    flex-direction:row;
+    justify-content: center;
+    justify-content:space-around;
+    
+}
+.bender{
+    width: 95px;
+    height: 105px;
+
+}
+.planets img{
+    height: 105px;
+    width: 175px;
+    color: red;    
+}
+.logo img{
+    height: 105px;
+}
+/* ! MAIN */
+.contmain{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 235px;
+    z-index: 1;
+}
+.planet img{
+    width: 300px;
+    height: 800px;
+    margin-left: 55px;
+    transition: 0.5s;
+    z-index: -1;
+}
+.planet img:hover{
+    transform: scale(1.3);
+    z-index: 1;
+
+}

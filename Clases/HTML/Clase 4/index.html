@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="in"></div>
+      <nav>
+        <ul>
+          <li><a href="#ej1">Ejercicio 1</a></li>
+          <li><a href="#ej2">Ejercicio 2</a></li>
+          <li><a href="#ej3">Ejercicio 3</a></li>
+          <li><a href="#ej3">Ejercicio 4</a></li>
+          <li><a href="#ej4">Ejercicio 5</a></li>
+          <li><a href="#ej6">Ejercicio 6</a></li>
+        </ul>
+        <br /><br /><br /><br /><br /><br />
+      </nav>
+    </header>
+    <main>
+      <div id="ej1">
+        <h1>Ejercicio 1</h1>
+        <form action="">
+          <label for="nombre">Introduzca su nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <br /><br />
+          <label for="apellidos">Introduzca su apellido:</label>
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Apellidos"
+          />
+        </form>
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+
+      <div id="ej2">
+        <h1>Ejercicio 2</h1>
+        <form action="">
+          <label for="nombre">Introduzca su nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <br /><br />
+          <label for="email">Introduzca un E-mail válido:</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <br /><br />
+          <label for="contra">Contraseña</label>
+          <input
+            type="password"
+            name="contraseña"
+            id="contraseña"
+            placeholder="Contraseña"
+          />
+        </form>
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <div id="ej3">
+        <h1>Ejercicio 3</h1>
+        <form action="">
+          <label for="nombre">Introduzca su nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <br /><br />
+          <label for="email">Introduzca un E-mail válido:</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <br /><br />
+          <label for="contra">Contraseña</label>
+          <input
+            type="password"
+            name="contraseña"
+            id="contraseña"
+            placeholder="Contraseña"
+          />
+          <input type="button" type="submit" value="Enviar" />
+        </form>
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <div id="ej4">
+        <h1>Ejercicio 4</h1>
+        <form action="">
+          <label for="nombre">Introduzca su nombre:</label>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            placeholder="Nombre"
+          />
+          <br /><br />
+          <label for="apellidos">Introduzca sus apellidos:</label>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            placeholder="Apellidos"
+          />
+          <br /><br />
+          <label for="number">Selecione un código postal</label>
+          <select name="planetas" id="planetas">
+            <datalist id="planetas">
+              <option value="35000">35000</option>
+              <option value="35014" selected>35014</option>
+              <option value="35015">35015</option>
+              <option value="35016">35016</option>
+              <option value="35017">35017</option>
+              <option value="35018">35018</option>
+            </datalist>
+          </select>
+          <br /><br />
+          <label for="notificaciones">¿Desea recibir notificaciones?</label>
+          <input type="checkbox" name="notificaciones" id="notificaciones" />
+          <input type="button" value="reset" />
+        </form>
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <div id="ej5">
+        <h1>Ejercicio 5</h1>
+        <form action="">
+          <label for="Asunto">Asunto</label>
+          <select name="Asunto" id="Asunto" required>
+            <datalist id="Asunto">
+              <option value="Reclamacion">Reclamacion</option>
+              <option value="Queja">Queja</option>
+              <option value="Sujerencia">Sujerencia</option>
+              <option value="Otros">Otros</option>
+            </datalist>
+          </select>
+          <br />
+          <label for="dni">DNI/NIE</label>
+          <input type="text" name="dni" id="dni" required />
+          <br />
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required />
+          <br />
+          <label for="apellido">Primer apellido</label>
+          <input type="text" name="apellido" id="apellido" required />
+          <br />
+          <label for="apellido2">Segundo apellido</label>
+          <input type="text" name="appelido2" id="apellido2" />
+          <br />
+          <label for="fecha">Fecha de nacimiento (dd/mm/aaaa)</label>
+          <input type="number" name="fecha" id="fecha" required />
+          <br />
+          <label for="telef">Teléfono de contacto</label>
+          <input type="tel" name="telef" id="telef" required />
+          <br />
+          <label for="correo">Correo electronico (para respuesta)</label>
+          <input type="email" name="correo" id="correo" />
+          <br />
+          <label for="domici">Domicilio</label>
+          <input type="text" name="domici" id="domici" required />
+          <br />
+          <label for="codigo">Código postal</label>
+          <input
+            type="number"
+            name="codigo"
+            id="codigo"
+            min="35000"
+            max="35999"
+            required
+          />
+          <br />
+          <label for="muni">Municipio</label>
+          <input
+            type="text"
+            list="muni"
+            name="seleccion"
+            id="seleccion"
+            required
+          />
+          <datalist id="muni">
+            <option value="Arucas">Arucas</option>
+            <option value="Teror">Teror</option>
+            <option value="Tejeda">Tejeda</option>
+            <option value="Moya">Moya</option>
+            <option value="Mogan">Mogan</option>
+          </datalist>
+          <br />
+          <label for="ofi">Oficina</label>
+          <input
+            type="text"
+            list="ofi"
+            name="seleccion"
+            id="seleccion"
+            required
+          />
+          <datalist id="ofi">
+            <option value="Oficina central">Arucas</option>
+            <option value="Oficina perimetral">Teror</option>
+            <option value="Oficina de arriba">Tejeda</option>
+            <option value="Oficina de abajo">Moya</option>
+            <option value="Alguna oficina cualquiera">Mogan</option>
+          </datalist>
+          <br />
+          <label for="informacion">Información Requerida</label>
+          <br />
+          <textarea
+            name="informacion"
+            id="informacion"
+            cols="50"
+            rows="30"
+            maxlength="250"
+          ></textarea>
+          <br />
+          <button type="submit">Enviar</button>
+        </form>
+        <br />
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <div id="ej6">
+        <h1>Ejercicio 6</h1>
+        <h1>Formulario de ingreso a la tropa estelar</h1>
+        <form action="" method="">
+          <!-- nombre  -->
+          <div>
+            <label for="nombre">Nombre</label>
+            <br />
+            <input
+              type="nombre"
+              id="nombre"
+              placeholder="Introduzca su nombre"
+              required
+            />
+          </div>
+          <!-- email -->
+          <div>
+            <label for="email">Email</label>
+            <br />
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+          <!-- teléfono -->
+          <div>
+            <label for="telefono">Telefono</label>
+            <br />
+            <input type="number" name="telefono" id="telefono" />
+          </div>
+          <!-- contraseña -->
+          <div>
+            <label for="password">Contraseña</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+              maxlength="24"
+            />
+          </div>
+          <!-- año de nacimiento -->
+          <div>
+            <label for="fecha">Fecha Estelar</label>
+            <br />
+            <input
+              type="number"
+              name="fecha"
+              id="fecha"
+              min="3500"
+              max="5000"
+            />
+          </div>
+          <!-- fecha de nacimiento -->
+          <div>
+            <label for="nacimiento">Fecha de nacimiento terrestre</label>
+            <br />
+            <input type="date" name="nacimiento" id="nacimiento" />
+          </div>
+          <!-- seleccion de planeta -->
+          <div>
+            <label for="seleccion">Planeta de nacimiento</label>
+            <br />
+            <input
+              type="text"
+              list="planeta"
+              name="seleccion"
+              id="seleccion"
+              required
+            />
+            <datalist id="planeta">
+              <option value="tierra">Tierra</option>
+              <option value="vulcano">Vulcano</option>
+              <option value="Janus V">Janus V</option>
+              <option value="Ardana">Ardana</option>
+            </datalist>
+          </div>
+          <!-- planeta de afiliación -->
+          <div>
+            <label for="planeta">Diga su planeta de afiliación </label>
+            <select name="planetas" id="planetas">
+              <datalist id="planetas">
+                <option value="Tierra" selected>Tierra</option>
+                <option value="Vulcano">Vulcano</option>
+                <option value="Janus V">Janus V</option>
+                <option value="Ardana">Ardana</option>
+                <option value="Corusant">Corusant</option>
+              </datalist>
+            </select>
+          </div>
+          <br />
+          <!-- chekbox -->
+          <div>
+            <label for="frontend">¿Federación de planetas unidos?</label>
+            <input type="checkbox" name="frontend" id="frontend" />
+          </div>
+          <!-- Federación o imperio -->
+          <div>
+            <input type="radio" name="eleccion" id="federacion" />
+            <label for="blanco">Federación de planetas unidos</label>
+          </div>
+          <div>
+            <br />
+            <input type="radio" name="eleccion" id="imperio" />
+            <label for="negro">Imperio Romulano</label>
+          </div>
+          <!-- Area de texto -->
+          <div>
+            <br />
+            <label for="curriculum">Aclaraciones</label>
+            <br />
+            <textarea
+              name="curriculum"
+              id="curriculum"
+              cols="30"
+              rows="10"
+              maxlength="250"
+            ></textarea>
+          </div>
+          <!-- Control de deslizamiento -->
+          <div>
+            <br /><br /><br />
+            <input
+              type="range"
+              name="valor"
+              id="rango"
+              min="0"
+              max="100"
+              value="50"
+            />
+          </div>
+          <!-- Carga de ficheros -->
+          <div>
+            <br /><br />
+            <input type="file" name="" id="" accept=".jpg, .png" />
+            <br />
+            <input type="file" name="" id="" multiple accept="image/*" />
+            <br />
+            <input type="file" name="" id="" multiple accept="audio/*" />
+            <br />
+            <input type="file" name="" id="" multiple accept="video/*" />
+            <br />
+          </div>
+          <!-- Bontones enviar borrar o enviar datos -->
+          <div>
+            <br />
+            <input type="button" value="Enviar" />
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar datos</button>
+          </div>
+        </form>
+        <a href="#in">Inicio</a>
+      </div>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+    </main>
+  </body>
+</html>

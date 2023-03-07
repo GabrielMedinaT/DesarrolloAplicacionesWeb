@@ -1,0 +1,80 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-rows: 55px 75% 100px;
+    height: 100vh;
+}
+main{
+    background-color: rgb(118, 224, 224);
+    grid-column: 1/-1 ;
+    grid-row: 2/3 ;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+main img{
+    width: 100vw;
+    opacity: 0.8;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+    
+}
+nav a{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+}
+header{
+    background-color: aqua;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+footer{
+    background-color: rgb(0, 85, 85);
+    grid-column: 1/-1 ;
+    display: flex;
+    flex-direction: column;
+}
+.letrero{
+    margin-left: 550px;
+    margin-top: 1px;
+    width: 350px;
+}
+.nombre{
+    margin-left: 550px;
+    margin-top: 10px;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    margin-left:450px ;
+    margin-top: 5px;
+}
+.pie a{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+}
+.lk{
+    transition: 0.5s;
+}
+.lk:hover{
+    color:chocolate;
+    transform: scale(1.3);
+}

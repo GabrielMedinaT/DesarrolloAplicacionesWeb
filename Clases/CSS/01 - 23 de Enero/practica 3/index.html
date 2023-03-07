@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles.css" />
+    <title>Vehiculos Pepe</title>
+  </head>
+  <body>
+    <div id="inicio6"></div>
+    <header>
+      <h1>Venta de vehiculos</h1>
+      <img src="./imagenes/Captura de pantalla 2023-01-13 092326.png" alt="" />
+      <br />
+      <a class="link" href="#fotos">Fotos</a>
+      <a class="link" href="#listado">Listado</a>
+      <a class="link" href="#altas"> Altas</a>
+      <a class="link" href="#contacto"> Contacto</a>
+    </header>
+    <main>
+      <!-- Seccion de las fotos -->
+      <section id="fotos">
+        <h2>Fotos</h2>
+        <a href="https://www.toyota.es/coches/mirai">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDS-GIFskBo76fPwA9QvOs5_-GAbo1qyILw&usqp=CAU"
+            alt=""
+            width="325"
+            height="275"
+        /></a>
+        <a href="https://www.renault.es/electricos/twingo-electric.html"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvRD9UBjcvwLXa_qGQhpBtlIvekdxPqdxxYg&usqp=CAU"
+            alt=""
+            width="325"
+            height="275"
+        /></a>
+        <a href="https://www.ferrari.com/es-ES/auto/gama"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH09ZhTte-4NVrI4yH0hoh7XFWTARhH8Iocg&usqp=CAU"
+            alt=""
+            width="325"
+            height="275"
+        /></a>
+
+        <br />
+        <a class="ini" href="#inicio">Inicio</a>
+      </section>
+      <!-- Seccion del listado -->
+      <section id="listado">
+        <ul>
+          <li><b>Toyota</b></li>
+          <ul>
+            <li><i>Mirai</i></li>
+            <li><i>Corolla</i></li>
+            <li><i>Yaris</i></li>
+          </ul>
+          <li>
+            <b>BMW</b>
+            <ul>
+              <li><i>I Hidrogen Next</i></li>
+              <li><i>BMW i7</i></li>
+            </ul>
+          </li>
+          <li>
+            <b>Honda</b>
+            <ul>
+              <li><i>CV-R</i></li>
+              <li><i>HV-R</i></li>
+            </ul>
+          </li>
+          <li>
+            <b>Seat</b>
+            <ul>
+              <li><i>Panda</i></li>
+              <li><i>Seat 127</i></li>
+              <li><i>Seat 125</i></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="ini" href="#inicio">Inicio</a>
+      </section>
+      <!-- Seccion de formulario de altas -->
+
+      <section id="altas">
+        <h1>Formulario de altas</h1>
+        <br />
+        <form action="">
+          <!-- Eleccion de marca de coche -->
+          <div>
+            <label for="marca">Elige marca de vehículo </label>
+            <select name="marca" id="marca" required>
+              <datalist id="marca" class="marc">
+                <option></option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Honda">Honda</option>
+                <option value="Seat">Seat</option>
+              </datalist>
+            </select>
+          </div>
+          <!-- Eleccion de modelo de coche -->
+          <div>
+            <label for="Modelo">Elige modelo de vehículo </label>
+            <select name="modelo" id="modelo">
+              <datalist id="modelo">
+                <option></option>
+                <option value="Mirai"></option>
+                <option value="Corolla">Corolla</option>
+                <option value="Yaris">Yaris</option>
+                <option value="I Hidrogen Next">I Hidrogen Next</option>
+                <option value="BMW i7">BMW i7</option>
+                <option value="CV-R">CV-R</option>
+                <option value="HV-R">HV-R</option>
+                <option value="Panda">Panda</option>
+                <option value="Seat 127">Seat 127</option>
+                <option value="Seat 125">Seat 125</option>
+              </datalist>
+            </select>
+            <br />
+          </div>
+          <!-- fecha de alta -->
+          <div>
+            <label for="alta">Fecha de Alta</label>
+            <input type="date" name="alta" id="alta" />
+          </div>
+          <br />
+          <!-- Nuevo o segunda mano -->
+          <div>
+            <label for="radio">¿Nuevo o segunda mano?</label>
+            <input type="radio" name="nuevo" id="Nuevo" />
+            <label for="Nuevo">Nuevo</label>
+            <input type="radio" name="nuevo" id="Segunda mano" />
+            <label for="Segunda mano">Segunda mano</label>
+          </div>
+          <!-- Precio -->
+          <label for="preciomin">Precio mínimo</label>
+          <input
+            type="number"
+            name="preciomin"
+            id="preciomin"
+            min="50000"
+            max="999999"
+            required
+          />
+          <label for="preciomax">Precio máximo</label>
+          <input
+            type="number"
+            name="preciomax"
+            id="preciomax"
+            min="50001"
+            max="1000000"
+            required
+          />
+          <br />
+          <br />
+          <input type="submit" value="Enviar" />
+        </form>
+        <br />
+        <a class="ini" href="#inicio">Inicio</a>
+      </section>
+    </main>
+    <br /><br /><br />
+    <footer>
+      <div id="contacto"></div>
+      <h1>CONTACTO</h1>
+      <p id="pie">
+        Copirigth Pepe el de los palotes- Calle Rue 13 del Percebe
+        <br />
+        35055 - Madrid
+      </p>
+      <p class="datos">
+        <a href="mailto:pepe@eldelospalotes.com">Email</a>
+        <br />
+        <a href="tel:+34123654789">Teléfono</a>
+        <br />
+        <a class="ini" href="#inicio">Inicio</a>
+      </p>
+    </footer>
+  </body>
+</html>
