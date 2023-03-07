@@ -3,8 +3,11 @@ import "./Componets/Formulario";
 import Formulario from "./Componets/Formulario";
 import { Enlaces } from "./Componets/Enlaces";
 import About from "./Componets/About";
-const mensj = "Hola Mundo";
+import { Comprobar } from "./Componets/Comprobar";
+
 function App() {
+  const mensaje = "Hola Mundo";
+  const mensaje2 = "Otra prueba";
   return (
     <div className="App">
       <h1 className="h1pr">Practica 1</h1>
@@ -18,8 +21,9 @@ function App() {
         <li>Elemento 4</li>
       </ul>
       <Formulario />
+      <Comprobar />
       <Enlaces />
-      <About mensj={mensj} />
+      <About mensaje={mensaje} mensaje2={mensaje2} />
     </div>
   );
 }
