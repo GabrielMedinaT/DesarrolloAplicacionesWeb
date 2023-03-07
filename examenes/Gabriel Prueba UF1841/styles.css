@@ -1,0 +1,311 @@
+/* Primario #E05400
+   Secundario #F7890C
+   Terciario #ED210C
+ */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    position: absolute;
+}
+nav{
+    position:fixed;
+    width: 100%;
+    height: 75px;    
+    margin-bottom: 1rem;
+    background-color:#E05400 ;
+    font-size: 1rem;
+}
+/* Enlaces de navegacion, animaciones y efectos */
+.uno{
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    width: 95px;
+    height: 25px;
+    left: 750px;
+    top: 35px;
+    transition:0.5s ;
+}
+.uno:hover{
+    transform: scale(1.3);
+    font-weight: 900;
+}
+.dos{
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    width: 95px;
+    height: 50px;
+    left: 820px;
+    top: 10px;
+    transition:0.5s ;
+}
+.dos:hover{
+    transform: scale(1.3);
+    font-weight: 900;
+}
+.tres{
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    width: 95px;
+    height: 50px;
+    left: 920px;
+    top: -40px;
+    transition:0.5s ;
+}
+.tres:hover{
+    transform: scale(1.3);
+    font-weight: 900;
+}
+.cuatro{
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    width: 95px;
+    height: 50px;
+    left: 1000px;
+    top: -89px;
+    transition:0.5s ;
+}
+.cuatro:hover{
+    transform: scale(1.3);
+    font-weight: 900;
+}
+/* LOGO */
+.logo{
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    top: 10px;
+    left: 75px;
+    border:#E05400 solid 4px ;
+    border-radius: 5%;
+}
+/* Encabezado de la pagina o Hero pages */
+.enca{
+    background-color: #fc87022c;
+    position: relative;
+    width: 490px;
+    height: 95px;
+    top: 250px;
+    left: 75vh;
+    font-size: 64px;
+    color: #E05400;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid #ED210C 5px;
+    z-index: -1; 
+}
+.hero{
+    position: absolute;
+    height: 800px;
+    z-index: -1;
+}
+/* seccion de Productos  */
+.productos{
+    position: relative;
+    width: 200%;
+    height: 1300px;
+    top: 600px;
+    background-color: #F7890C;
+    z-index: -1;
+}
+/* BOTONES */
+input{
+    position: relative;
+    top:-110px;
+    left: 450px;
+    border:none;   
+    outline-offset: 3px;
+    border-radius: 10%;
+    padding: 12px 14px;
+    background: rgb(24, 24, 24);
+    color: white;
+    transition: 0.5s;
+    outline: 2px solid rgb(44, 44, 44);
+    font-family: 'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+}
+input:hover{
+     background-color:#F7890C;
+    border-radius: 2em;
+    outline: 2px solid rgb(44, 44, 44);
+}
+/* JUEGO 1 BALLON FIGTHER */
+.p1{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 55px;
+    background-color: #ED210C;
+    border: solid black 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.p1:hover{
+    transform: scale(1.2);
+}
+.j1{
+    top: 10px;
+    left: 100px;
+    height: 250px;
+    width: 150px;
+    position: relative;
+}
+.titu1{
+    top: -250px;
+    left: 350px;
+    font-size: 64px;
+    position: relative;
+}
+.prec1{
+    position: relative;
+    top: -130px;
+    left: 450px;
+}
+.descrip1{
+    width: 250px;
+    text-align: justify;
+    position: relative;
+    top: -290px;
+    left: 350px;
+    font-weight:900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande','Lucida Sans Unicode', Geneva, 
+     Verdana, sans-serif;
+}
+/* JUEGO 2  SONIC*/
+.p2{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 85px;
+    background-color: #ED210C;
+    border: solid black 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.p2:hover{
+    transform: scale(1.2);
+}
+.j2{
+    top: 10px;
+    left: 100px;
+    height: 250px;
+    width: 150px;
+    position: relative;
+}
+.titu2{
+    top: -250px;
+    left: 350px;
+    font-size: 64px;
+    position: relative;
+}
+.prec2{
+    position: relative;
+    top: -130px;
+    left: 450px;
+}
+.descrip2{
+    width: 290px;
+    text-align: justify;
+    position: relative;
+    top: -310px;
+    left: 350px;
+    font-weight:900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande','Lucida Sans Unicode', Geneva, 
+     Verdana, sans-serif;
+}
+/* JUEGO 3 MEDIEVIL */
+.p3{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    left: 300px;
+    top: 115px;
+    background-color: #ED210C;
+    border: solid black 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.p3:hover{
+    transform: scale(1.2);
+}
+.j3{
+    top: 10px;
+    left: 100px;
+    height: 250px;
+    width: 150px;
+    position: relative;
+}
+.titu3{
+    top: -250px;
+    left: 350px;
+    font-size: 64px;
+    position: relative;
+}
+.prec3{
+    position: relative;
+    top: -130px;
+    left: 450px;
+}
+.descrip3{
+    width: 390px;
+    text-align: justify;
+    position: relative;
+    top: -310px;
+    left: 350px;
+    font-weight:900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande','Lucida Sans Unicode', Geneva, 
+     Verdana, sans-serif;
+}
+/* PIE DE PÁGINA */
+footer {
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    top: 1900px;    
+    background-color:#E05400;     
+}
+.correo{
+    position: relative;
+    color: black;
+    font-weight: 900;
+    top: 10px;
+    left: 350px;
+    font-size: 2rem;
+}
+.telefono{
+    position: relative;
+    color: black;
+    top: 20px;
+    left: 350px;
+    font-weight: 900;
+    font-size: 2rem;
+    }
+.copri{
+    position: absolute;
+    height: 30px;
+    width: 350px;
+    font-size: 2rem;
+    top: 25px;
+    left: 700px;
+}
+

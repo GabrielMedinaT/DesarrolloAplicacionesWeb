@@ -1,0 +1,20 @@
+CSS para boton
+input{
+    outline-offset: 3px;
+    border-radius: 10%;
+    padding: 12px 14px;
+    background: rgb(24, 24, 24);
+    color: white;
+    transition: 0.5s;
+    outline: 2px solid rgb(44, 44, 44);
+    font-family: 'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+}
+
+CSS para Hover de boton
+
+input:hover{
+   background-color:#F7890C;
+   border-radius: 2em;
+   outline: 2px solid rgb(44, 44, 44);
+}

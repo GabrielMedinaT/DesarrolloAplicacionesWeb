@@ -1,0 +1,53 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+}
+
+.simon {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.cuadro {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.verde {
+  background-color: green;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin: 20px auto;
+}
+
+#inicio {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
