@@ -16,10 +16,11 @@ export const Enlaces = () => {
             <ul>
                 {enlaces.map((enlace, index) => (
                     <ul>
-                        <li><a href={enlace}>Enlace</a></li>
+                        <li><a href={enlace[index]}>Enlace</a></li>
                     </ul>
                 ))}
-            </ul>       
+            </ul> 
+            
     </div>
   )
 }
