@@ -42,4 +42,7 @@
 .lista1 {
   width: 130px;
   margin-left: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(223, 223, 223, 0.205);
 }
