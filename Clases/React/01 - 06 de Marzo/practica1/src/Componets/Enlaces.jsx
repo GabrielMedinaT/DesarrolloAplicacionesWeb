@@ -4,6 +4,7 @@ import "./Enlaces.css"
 export const Enlaces = () => {
     const enlaces = ["https://nodejs.org/en/", "https://slides.com/", "https://google.es", "https://lenguajejs.com/", "https://www.w3schools.com/js/default.asp"] 
     //consulta a base de datos
+    console.log(enlaces)
     return (   
         
         <div>
