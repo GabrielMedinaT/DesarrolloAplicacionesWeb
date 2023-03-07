@@ -7,7 +7,7 @@ import { Comprobar } from "./Componets/Comprobar";
 
 function App() {
   const mensaje = "Hola Mundo";
-  const mensaje2 = "Otra prueba";
+  const mensaje2 = "Otra prueba dos";
   return (
     <div className="App">
       <h1 className="h1pr">Practica 1</h1>
