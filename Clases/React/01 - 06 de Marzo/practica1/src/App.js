@@ -6,8 +6,8 @@ import { Enlaces } from "./Componets/Enlaces";
 function App() {
   return (
     <div className="App">
-      <h1>Practica 1</h1>
-      <h2>Esta es la practica 1 el h2</h2>
+      <h1 className="h1pr">Practica 1</h1>
+      <h2 className="h2pr">Esta es la practica 1 el h2</h2>
       <p>Este es un parrafo</p>
       <ul className="lista1">
         Lista
