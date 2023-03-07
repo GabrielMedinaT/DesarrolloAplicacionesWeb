@@ -2,7 +2,8 @@ import "./App.css";
 import "./Componets/Formulario";
 import Formulario from "./Componets/Formulario";
 import { Enlaces } from "./Componets/Enlaces";
-
+import About from "./Componets/About";
+const mensj = "Hola Mundo";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       </ul>
       <Formulario />
       <Enlaces />
+      <About mensj={mensj} />
     </div>
   );
 }
