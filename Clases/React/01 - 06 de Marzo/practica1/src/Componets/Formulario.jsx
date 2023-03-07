@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Formulario = () => {
   return (
-      <div className=''>
+      <div className='formu'>
           <form action="" className='Formulario'>
               <label className='intro' htmlFor="nombre">Nombre</label>
               <input className='entrada' type="text" name="nombre" id="nombre" placeholder="Nombre" />

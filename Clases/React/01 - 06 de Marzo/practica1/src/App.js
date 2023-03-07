@@ -9,7 +9,7 @@ function App() {
       <h1>Practica 1</h1>
       <h2>Esta es la practica 1 el h2</h2>
       <p>Este es un parrafo</p>
-      <ul>
+      <ul className="lista1">
         Lista
         <li>Elemento 1</li>
         <li>Elemento 2</li>
