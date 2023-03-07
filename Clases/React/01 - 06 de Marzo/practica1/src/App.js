@@ -1,6 +1,7 @@
 import "./App.css";
 import "./Componets/Formulario";
 import Formulario from "./Componets/Formulario";
+import { Enlaces } from "./Componets/Enlaces";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <li>Elemento 3</li>
         <li>Elemento 4</li>
       </ul>
+      <Formulario />
+      <Enlaces />
     </div>
   );
 }

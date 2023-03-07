@@ -2,14 +2,15 @@ import React from 'react'
 
 export const Formulario = () => {
   return (
-      <div>
+      <div className=''>
           <form action="" className='Formulario'>
-              <label htmlFor="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
-              <label htmlFor="apellido">Apellido</label>
-              <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <label className='intro' htmlFor="nombre">Nombre</label>
+              <input className='entrada' type="text" name="nombre" id="nombre" placeholder="Nombre" />
+              <label className='intro' htmlFor="apellido">Apellido</label>
+              <input className='entrada' type="text" name="apellido" id="apellido" placeholder="Apellido" />
+              <label className='intro' htmlFor="email">Email</label>
+              <input className='entrada' type="email" name="email" id="email" placeholder="Email" />
+              <input className='entrada' type="button" value="Enviar" />
               
           </form>
     </div>
