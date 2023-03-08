@@ -1,12 +1,14 @@
 import React from 'react'
-import Blog from './Blog'
+import "./Autor.css"
 
-const Autor = ({autor, fecha, mensaje}) => {
+
+const Autor = ({autor, mensaje, fecha}) => {
+    
   return (
       <div>
           
-          <ul>
-              <h3>{autor}{mensaje}{fecha }</h3>
+          <ul className='autor'>
+              <h3>{autor}{mensaje}{fecha}</h3>
           </ul>  
       </div>
   )

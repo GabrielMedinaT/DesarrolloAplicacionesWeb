@@ -23,13 +23,14 @@ const Blog = () => {
         }];
   return (
 <div>
-			<h2 className='large'>Listado de Usuarios</h2>
+          <h2 className='large'>Post mas recientes</h2>
 			<ul>
-				{posts.map((posts) => {
-                    return <Autor key={posts.id}
-                        autor={posts.autor}
-                        fecha={posts.fecha}
-                        mensaje={posts.mensaje} />; 
+				{posts.map((post) => {
+                    return <Autor key={post.id}
+                        autor={post.autor}
+                        fecha={post.fecha}
+                        mensaje={post.mensaje}
+                        post={post} />; 
 				})}
 			</ul>
 		</div>
