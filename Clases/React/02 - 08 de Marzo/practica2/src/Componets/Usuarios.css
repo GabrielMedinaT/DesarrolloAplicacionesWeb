@@ -10,7 +10,12 @@
   border: solid 1px black;
   box-shadow: -15px -15px 15px rgb(184, 184, 184);
   padding: 20px;
-  margin-right: 20px;
+  margin-right: 100px;
   border-radius: 10px;
   width: 500px;
+  transition: 0.7s;
+}
+.listado h3:hover {
+  transform: scale(1.4);
+  box-shadow: 15px 15px 15px rgb(184, 184, 184);
 }
