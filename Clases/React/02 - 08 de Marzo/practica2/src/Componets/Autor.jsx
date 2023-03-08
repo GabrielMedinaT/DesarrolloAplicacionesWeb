@@ -6,7 +6,6 @@ const Autor = ({autor, fecha, mensaje}) => {
       <div>
           <h3>Autor</h3>
           <ul>
-              
               <h3>Autor: {autor} Mensaje:{mensaje} Fecha:{fecha }</h3>
           </ul>  
       </div>
