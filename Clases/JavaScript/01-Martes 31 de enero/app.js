@@ -16,3 +16,4 @@ console.log("ya ni se cual cabio es este");
 console.log("Otro cambio mas");
 console.log("prueba en clases");
 console.log("prueba martes ");
+console.log("hoy es miercoles");
