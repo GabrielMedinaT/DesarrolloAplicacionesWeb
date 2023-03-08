@@ -1,5 +1,6 @@
 import React from 'react'
 import UsuariosUnicos from './UsuariosUnicos'
+import "./Usuarios.css"
 
 
 const Usuarios = () => {
@@ -21,9 +22,13 @@ const Usuarios = () => {
         nikname: "Muerteatodosloshumanos",
     }]
     return (
-        <div>
-            <ul>
-                <li>{users[0].nikname}</li>
+        <div className='listado'>
+            <ul className='listaUnica'>
+                <UsuariosUnicos users=
+                    { "Nombre: " +  users[0].nombre + " Nick: " + users[0].nikname + " " + users[0].correo 
+                    + " Nombre: " + users[1].nombre + " Nick: " + users[1].nikname + " " + users[1].correo 
+                    + " Nombre: " + users[2].nombre + " Nick: " + users[2].nikname + " " + users[2].correo
+                } />
             </ul>
         </div>
   )

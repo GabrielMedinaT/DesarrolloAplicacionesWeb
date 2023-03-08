@@ -1,5 +1,6 @@
 import React from 'react'
 import Autor from './Autor'
+import "./Blog.css"
 
 
 const Blog = () => {
@@ -24,7 +25,7 @@ const Blog = () => {
   return (
 <div>
           <h2 className='large'>Post mas recientes</h2>
-			<ul>
+			<ul className='largo'>
 				{posts.map((post) => {
                     return <Autor key={post.id}
                         autor={post.autor}

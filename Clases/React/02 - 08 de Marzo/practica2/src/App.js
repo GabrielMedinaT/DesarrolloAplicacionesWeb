@@ -7,7 +7,7 @@ import UsuariosUnicos from "./Componets/UsuariosUnicos";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Practica 2</header>
+      <header className="App-header">Blog Blanetario</header>
       <Blog />
       <Autor />
       <Usuarios />

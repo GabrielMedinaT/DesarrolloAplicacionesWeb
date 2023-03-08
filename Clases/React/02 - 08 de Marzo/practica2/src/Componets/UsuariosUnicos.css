@@ -6,12 +6,3 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.nick {
-  background-color: aqua;
-  width: auto;
-  height: auto;
-  font-size: 16px;
-  font-weight: 800;
-  grid-row: 1/2;
-  grid-column: 1/2;
-}

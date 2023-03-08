@@ -2,13 +2,11 @@ import React from 'react'
 import "./UsuariosUnicos.css"
 
 
-const UsuariosUnicos = ({ nombre,nikname, correo  }) => {
+const UsuariosUnicos = ({ users}) => {
 
   return (
       <div className='nick'>
-              <h3>{nombre}</h3>
-              <h3>{nikname}</h3>
-              <h3>{correo }</h3>
+              <h3>{users}</h3>
           
     </div>
   )

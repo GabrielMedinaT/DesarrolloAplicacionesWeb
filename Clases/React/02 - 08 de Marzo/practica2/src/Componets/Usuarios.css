@@ -1,0 +1,16 @@
+.listado {
+  grid-row: 1/5;
+  grid-column: 6/7;
+  display: flex;
+  align-items: flex-start;
+}
+.listado h3 {
+  color: black;
+  margin-top: 150px;
+  border: solid 1px black;
+  box-shadow: -15px -15px 15px rgb(184, 184, 184);
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 500px;
+}
