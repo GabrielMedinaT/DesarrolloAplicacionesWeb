@@ -1,6 +1,8 @@
 import React from 'react'
+import Autor from './Autor'
 
-const Blog = (props) => {
+
+const Blog = () => {
     const posts = [{
         id: 1,
         autor: "Manolo ",
@@ -20,13 +22,18 @@ const Blog = (props) => {
             mensaje: "Velocidad de curvatura 9 "
         }];
   return (
-      <div>
-          <h1>Post mas recientes</h1>
-          <ul>
-              <li>Autor:{posts[0].autor}   {posts[0].fecha}{ posts[0].mensaje}</li>
-          </ul> 
-          <h1>{props.posts[0]}</h1>
-    </div>
+<div>
+			<h2 className='large'>Listado de Usuarios</h2>
+			<ul>
+				{posts.map((posts) => {
+                    return <Autor key={posts.id}
+                        autor={posts.autor}
+                        fecha={posts.fecha}
+                        mensaje={posts.mensaje} />; 
+				})}
+			</ul>
+		</div>
+    
   )
 }
 

@@ -1,8 +1,15 @@
 import React from 'react'
+import Blog from './Blog'
 
-const Autor = () => {
+const Autor = ({autor, fecha, mensaje}) => {
   return (
-      <div>{ }</div>
+      <div>
+          <h3>Autor</h3>
+          <ul>
+              
+              <h3>Autor: {autor} Mensaje:{mensaje} Fecha:{fecha }</h3>
+          </ul>  
+      </div>
   )
 }
 
