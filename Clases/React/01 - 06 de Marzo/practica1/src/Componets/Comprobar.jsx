@@ -3,7 +3,6 @@ import axios from 'axios';
 
 export const Comprobar = () => {
   const [clientes, listaClientes] = useState([]);
-
   useEffect(() => {
     const listar = async () => {
       try {
