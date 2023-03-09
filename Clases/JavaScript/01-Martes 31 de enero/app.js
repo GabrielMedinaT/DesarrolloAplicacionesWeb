@@ -23,3 +23,4 @@ console.log("que pasa carapasa");
 console.log("hola caracola");
 console.log("Muestra");
 console.log("43");
+console.log(22);
