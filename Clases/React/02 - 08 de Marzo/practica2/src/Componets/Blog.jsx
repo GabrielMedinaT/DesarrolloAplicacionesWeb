@@ -22,6 +22,10 @@ const Blog = () => {
             fecha: "Fecha estelar 202556745.2 ",
             mensaje: "Velocidad de curvatura 9 "
         }];
+    const [post, setPost] = React.useState(posts);
+    console.log(setPost)
+    console.log(post)
+    
   return (
 <div>
           <h2 className='large'>Post mas recientes</h2>
