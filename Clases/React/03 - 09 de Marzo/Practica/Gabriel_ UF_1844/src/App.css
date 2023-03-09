@@ -8,7 +8,7 @@
 }
 #root {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(5, 20%);
   grid-gap: 1rem;
   padding: 1rem;
@@ -25,20 +25,21 @@
   flex-direction: column;
 }
 .App .nombre {
-  font-size: 16px;
+  font-size: 24px;
 
   font-weight: bold;
   color: #000;
   margin: 5px;
 }
 .App .nombre {
-  width: 300px;
+  width: 900px;
   padding: 10px;
   border: solid 1px #383838;
   box-shadow: 10px 10px 15px #888888;
   transition: 0.8s;
+  background-color: white;
 }
 .App .nombre:hover {
   background-color: white;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
