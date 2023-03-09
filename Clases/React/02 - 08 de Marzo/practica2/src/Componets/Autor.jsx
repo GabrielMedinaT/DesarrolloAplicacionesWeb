@@ -4,7 +4,8 @@ import "./Autor.css"
 
 const Autor = ({autor, mensaje, fecha}) => {
     
-  return (
+    return (
+      
       <div className='aux'>
           
           <ul className='autor'>
