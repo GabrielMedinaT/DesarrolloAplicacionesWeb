@@ -7,7 +7,7 @@ function Example() {
     id: uuidv4(),
     nombre: "Juan",
   };
-  console.log(nuevoObjeto);
+  console.log(nuevoObjeto.id);
 
   return (
     <div>
