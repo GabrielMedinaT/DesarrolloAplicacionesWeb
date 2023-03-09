@@ -1,0 +1,11 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.gest h3 {
+  font-size: 40px;
+}
