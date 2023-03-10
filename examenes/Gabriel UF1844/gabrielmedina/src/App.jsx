@@ -3,17 +3,9 @@ import Datos from "./componets/datos";
 import Listado from "./componets/Listado";
 
 function App() {
-  function condicion() {
-    let estado = "launch";
-    return (
-      // <><input type="text" name="" id="" value={estado}></input>
-      //   <input type="button" value="buscar" />
+    let estado = "producción";
+  return <div className="App">    
         <Listado dato={Datos.filter((proyecto) => proyecto.fase === estado)} />
-      
-    );
-  }
-
-  return <div className="App">{condicion()} </div>;
+       </div>;
 }
-
 export default App;
