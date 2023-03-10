@@ -1,11 +1,12 @@
 import React from 'react'
-import Listado from './Listado'
+
 
 const ElementoListado = ({dato}) => {
   return (
 
     <div>
-      <h1>{dato.coder}</h1>
+      <h1>Coder= {dato.coder}</h1>
+      <h2>{dato.proyecto}</h2>
       <h3 key={dato.id}>
          {dato.fase}
       </h3>
