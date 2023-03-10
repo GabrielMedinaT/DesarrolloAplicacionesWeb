@@ -2,7 +2,7 @@ import React from 'react'
 import "./Gestion.jsx"
 import Gest from './Gest'
 
-const gestion = ({ perro },) => {
+const gestion = ({ perro }) => {
 
     return (
       
