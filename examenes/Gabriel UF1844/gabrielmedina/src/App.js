@@ -3,7 +3,7 @@ import Datos from "./componets/datos";
 import Listado from "./componets/Listado";
 
 function App() {
-  let estado = "launch";
+  let estado = "test";
   return (
     <div className="App">
       return(
