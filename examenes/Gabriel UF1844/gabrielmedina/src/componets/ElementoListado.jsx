@@ -1,7 +1,8 @@
 import React from 'react'
 
 
-const ElementoListado = ({dato}) => {
+const ElementoListado = ({ dato }) => {
+  console.log(dato)
   return (
 
     <div>

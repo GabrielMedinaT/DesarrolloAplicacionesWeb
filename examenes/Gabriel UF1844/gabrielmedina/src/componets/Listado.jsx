@@ -3,12 +3,12 @@ import ElementoListado from './ElementoListado'
 
 
 const Listado = ({ dato }) => {
-
+console.log(dato)
   return (
     <div>
         <ul>
-      {dato.map((dato) => {
-            return <ElementoListado key={dato.id} dato={dato} />
+      {dato.map((estados) => {
+            return <ElementoListado key={dato.id} dato={estados} />
       })}
         </ul>
     </div>

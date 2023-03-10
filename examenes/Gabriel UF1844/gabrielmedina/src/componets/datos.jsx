@@ -8,7 +8,7 @@ const Datos = [
 	},
 	{
 		id: 2,
-		fase: 'lauch',
+		fase: 'launch',
 		proyecto: 'Trinder-c1',
 		fechalimite: '23/08/2022',
 		coder: 'Jean-Luc du Pont et Marseille',
