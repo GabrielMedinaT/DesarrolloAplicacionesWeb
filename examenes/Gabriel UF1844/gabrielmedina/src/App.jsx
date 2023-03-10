@@ -5,13 +5,13 @@ import Listado from "./componets/Listado";
 function App() {
 
 
-  
+
   function faseCondicional() {
-    let estado = "test";
+    let estado = "launch";
     return (
-      <><input type="text" name="" id=""></input>
-        <input type="button" value="buscar" />
-        <Listado dato={Datos.filter((proyecto) => proyecto.fase === estado)} /></>
+      // <><input type="text" name="" id="" value={estado}></input>
+      //   <input type="button" value="buscar" />
+        <Listado dato={Datos.filter((proyecto) => proyecto.fase === estado)} />
       
     );
   }

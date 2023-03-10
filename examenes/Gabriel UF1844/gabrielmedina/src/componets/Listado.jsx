@@ -5,8 +5,8 @@ import ElementoListado from './ElementoListado'
 const Listado = ({ dato }) => {
 
   return (
-    <div>
-        <ul>
+    <div className='listota'>
+        <ul className='lista'>
       {dato.map((dato) => {
             return <ElementoListado key={dato.id} dato={dato} />
       })}
