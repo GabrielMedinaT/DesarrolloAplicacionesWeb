@@ -3,10 +3,7 @@ import Datos from "./componets/datos";
 import Listado from "./componets/Listado";
 
 function App() {
-
-
-
-  function faseCondicional() {
+  function condicion() {
     let estado = "launch";
     return (
       // <><input type="text" name="" id="" value={estado}></input>
@@ -16,7 +13,7 @@ function App() {
     );
   }
 
-  return <div className="App">{faseCondicional()} </div>;
+  return <div className="App">{condicion()} </div>;
 }
 
 export default App;
