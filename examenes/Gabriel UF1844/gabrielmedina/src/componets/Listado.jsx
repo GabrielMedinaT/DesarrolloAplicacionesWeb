@@ -2,13 +2,13 @@ import React from 'react'
 import ElementoListado from './ElementoListado'
 
 
-const Listado = ({ dato }) => {
-
+const Listado = ({ estados }) => {
+console.log(estados)
   return (
     <div>
         <ul>
-      {dato.map((dato) => {
-            return <ElementoListado key={dato.id} dato={dato} />
+      {estados.map((estados) => {
+            return <ElementoListado key={estados.id} dato={estados} />
       })}
         </ul>
     </div>

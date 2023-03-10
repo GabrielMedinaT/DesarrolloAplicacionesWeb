@@ -3,11 +3,11 @@ import Datos from "./componets/datos";
 import Listado from "./componets/Listado";
 
 function App() {
-  let estado = "test";
+  let estado = "desarrollo";
+
   return (
     <div className="App">
-      return(
-      <Datos estado={Datos.filter((est) => est.estado === estado)} />)
+      <Listado estados={Datos.filter((est) => est.estado === estado)} />
     </div>
   );
 }
