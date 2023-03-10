@@ -4,6 +4,7 @@ import Listado from "./componets/Listado";
 
 function App() {
   function faseCondicional() {
+    let estado = "launch";
     return (
       <Listado dato={Datos.filter((proyecto) => proyecto.fase === "launch")} />
     );
