@@ -3,10 +3,16 @@ import Datos from "./componets/datos";
 import Listado from "./componets/Listado";
 
 function App() {
+
+
+  
   function faseCondicional() {
-    let estado = "launch";
+    let estado = "test";
     return (
-      <Listado dato={Datos.filter((proyecto) => proyecto.fase === "launch")} />
+      <><input type="text" name="" id=""></input>
+        <input type="button" value="buscar" />
+        <Listado dato={Datos.filter((proyecto) => proyecto.fase === estado)} /></>
+      
     );
   }
 
