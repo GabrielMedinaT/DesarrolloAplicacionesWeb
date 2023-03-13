@@ -32,9 +32,9 @@ const Blog = () => {
 			<ul className='largo'>
 				{posts.map((post) => {
                     return <Autor key={post.id}
-                        autor={post.autor}
-                        fecha={post.fecha}
-                        mensaje={post.mensaje}
+                        autor={"Autor: " + post.autor}
+                        fecha={"Fecha: " + post.fecha}
+                        mensaje={"Mensaje: " + post.mensaje}
                         post={post} />; 
 				})}
 			</ul>

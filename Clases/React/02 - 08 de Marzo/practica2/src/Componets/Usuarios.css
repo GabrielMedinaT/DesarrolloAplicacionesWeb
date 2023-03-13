@@ -1,10 +1,6 @@
-.listado {
-  grid-row: 1/5;
-  grid-column: 6/7;
-  display: flex;
-  align-items: flex-start;
-}
 .listado h3 {
+  display: flex;
+  align-items: center;
   color: black;
   margin-top: 150px;
   border: solid 1px black;
@@ -14,6 +10,14 @@
   border-radius: 10px;
   width: 500px;
   transition: 0.7s;
+}
+.aux {
+  display: flex;
+  align-items: center;
+}
+.autor {
+  display: flex;
+  align-items: center;
 }
 .listado h3:hover {
   transform: scale(1.4);

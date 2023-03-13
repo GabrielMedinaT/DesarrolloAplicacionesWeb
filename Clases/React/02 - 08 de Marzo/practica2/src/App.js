@@ -1,17 +1,23 @@
 import "./App.css";
-import Autor from "./Componets/Autor";
 import Blog from "./Componets/Blog";
 import Usuarios from "./Componets/Usuarios";
-import UsuariosUnicos from "./Componets/UsuariosUnicos";
+
+let entrada = false;
+const num = Math.round(Math.random() * 1);
+if (num === 0) {
+  entrada = true;
+} else entrada = false;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Blog Blanetario</header>
-      <Blog />
-      <Autor />
-      <Usuarios />
-      <UsuariosUnicos />
+    <div className="entrada">
+      {entrada ? (
+        <div className="blog">
+          <Blog /> <Usuarios />{" "}
+        </div>
+      ) : (
+        <h1 className="mensaje">No hay mensajes </h1>
+      )}
     </div>
   );
 }
