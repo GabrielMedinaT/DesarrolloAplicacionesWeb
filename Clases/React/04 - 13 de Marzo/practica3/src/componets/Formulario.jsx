@@ -9,9 +9,9 @@ const Formulario = () => {
     email: "pepe@pepe",
     password: "sdfsdf",
   }])
-  const [nuevoNombre, setNuevoNombre] = useState()
-  const [nuevoEmail, setNuevoEmail] = useState('')
-  const [nuevoPassword, setNuevoPassword] = useState('')
+  const [nuevoNombre, setNuevoNombre] = useState([''])
+  const [nuevoEmail, setNuevoEmail] = useState([''])
+  const [nuevoPassword, setNuevoPassword] = useState([''])
 
   const gestorCambioNombre = (event) => {
     setNuevoNombre(event.target.value)
@@ -30,8 +30,7 @@ const Formulario = () => {
     email: nuevoEmail,
     password: nuevoPassword
       }])
-    console.log(usuario)
-    console.log(setUsuario)
+
   }
   return (
     <div><h1>Hola</h1>
