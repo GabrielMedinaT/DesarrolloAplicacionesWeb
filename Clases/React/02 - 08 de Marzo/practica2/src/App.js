@@ -16,7 +16,7 @@ function App() {
           <Blog /> <Usuarios />{" "}
         </div>
       ) : (
-        <h1 className="mensaje">No hay mensajes </h1>
+        (entrada = true)
       )}
     </div>
   );
