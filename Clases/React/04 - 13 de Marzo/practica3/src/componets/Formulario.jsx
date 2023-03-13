@@ -10,7 +10,7 @@ const Formulario = () => {
     password: "sdfsdf",
   }])
   console.log(usuario)
-  const [nuevoNombre, setNuevoNombre] = useState('')
+  const [nuevoNombre, setNuevoNombre] = useState()
   const [nuevoEmail, setNuevoEmail] = useState('')
   const [nuevoPassword, setNuevoPassword] = useState('')
 
@@ -23,7 +23,7 @@ const Formulario = () => {
   const gestorCambioPassword = (event) => {
     setNuevoPassword(event.target.value)
   }
-  const gestrSubmit = () => {
+  const gestSubmit = () => {
       setUsuario([...usuario, {
     id: uuidv4(),
     nombre: nuevoNombre,
@@ -31,10 +31,11 @@ const Formulario = () => {
     password: nuevoPassword
       }])
     console.log(usuario)
+    console.log(setUsuario)
   }
   return (
     <div><h1>Hola</h1>
-      <form onSubmit={gestrSubmit} action="">
+      <form onSubmit={gestSubmit} action="">
         <label hymlFor="nombre">Nombre </label>
         <input
           type="text"
