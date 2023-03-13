@@ -46,8 +46,6 @@ const Blog = () => {
     return(
     
 <div className="contenedor">
-        
-
         <form onSubmit={nuevaEntrada}
             className="formulario">
         <label htmlFor="nombre">Autor</label>
