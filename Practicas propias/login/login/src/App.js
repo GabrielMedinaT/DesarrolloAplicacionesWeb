@@ -1,5 +1,7 @@
 import "./App.css";
 import { useState } from "react";
+import Card from "./Componets/Card.jsx";
+import Denegado from "./Componets/Denegado";
 
 function App() {
   const usuarios = [
