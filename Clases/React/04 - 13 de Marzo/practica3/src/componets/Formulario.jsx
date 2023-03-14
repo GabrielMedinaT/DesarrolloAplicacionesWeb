@@ -45,7 +45,7 @@ const Formulario = () => {
     <div><h1>Hola</h1>
       {error? <h3>Debes completar todos los campos</h3> : null}
       <form onSubmit={gestSubmit} action="">
-        <label htmlFor="nombre">Nombre </label>
+        <label htmlFor="nombre">Nombre  </label>
         <input
           type="text"
           onChange={gestorCambioNombre}
