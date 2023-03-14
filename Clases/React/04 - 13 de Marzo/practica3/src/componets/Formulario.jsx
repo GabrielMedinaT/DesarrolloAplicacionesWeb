@@ -12,6 +12,7 @@ const Formulario = () => {
   const [nuevoNombre, setNuevoNombre] = useState([''])
   const [nuevoEmail, setNuevoEmail] = useState([''])
   const [nuevoPassword, setNuevoPassword] = useState([''])
+  const [error, setError] = useState(false)//para el error
 
   const gestorCambioNombre = (event) => {
     setNuevoNombre(event.target.value)
@@ -24,16 +25,25 @@ const Formulario = () => {
   }
   const gestSubmit = (e) => {
     e.preventDefault();
+    setError(false)
+    if ( nuevoNombre.trim() === '' || nuevoEmail.trim() === '' || nuevoPassword.trim() === '') {
+      setError(true)
+      return
+    }
       setUsuario([...usuario, {
     id: uuidv4(),
     nombre: nuevoNombre,
     email: nuevoEmail,
     password: nuevoPassword
       }])
-
+    setNuevoNombre('');
+    setNuevoEmail('');
+    setNuevoPassword('');
   }
+  console.log(nuevoNombre, nuevoEmail, nuevoPassword)
   return (
     <div><h1>Hola</h1>
+      {error? <h3>Debes completar todos los campos</h3> : null}
       <form onSubmit={gestSubmit} action="">
         <label htmlFor="nombre">Nombre </label>
         <input
