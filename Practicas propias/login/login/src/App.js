@@ -27,8 +27,8 @@ function App() {
   const compruebaUsuario = (e) => {
     e.preventDefault();
     usuarios.filter((usuario) => {
-      if (comprueba[0].usuario.includes(usuario.usuario)) {
-        if (comprueba[0].contraseña.includes(usuario.contraseña)) {
+      if (usuario.usuario.includes(comprueba.usuario)) {
+        if (usuario.contraseña.includes(comprueba.contraseña)) {
           alert("Bienvenido");
         } else {
           alert("Contraseña incorrecta");
