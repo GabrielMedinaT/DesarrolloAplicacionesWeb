@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Card from "./Componets/Card.jsx";
 import Denegado from "./Componets/Denegado";
+import Formulario from "./Componets/Formulario";
 
 function App() {
   const usuarios = [
