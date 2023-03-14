@@ -4,13 +4,6 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
-.mensaje {
+.large {
   color: red;
-  font-size: 48px;
-  text-align: center;
-  margin-top: 250px;
-}
-.entrada {
-  display: flex;
-  flex-direction: row;
 }

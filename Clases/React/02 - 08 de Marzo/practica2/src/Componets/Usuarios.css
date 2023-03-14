@@ -11,15 +11,13 @@
   width: 500px;
   transition: 0.7s;
 }
-.aux {
-  display: flex;
-  align-items: center;
-}
+
 .autor {
   display: flex;
   align-items: center;
 }
 .listado h3:hover {
-  transform: scale(1.4);
+  grid-column: 4 / 6;
+  transform: scale(3);
   box-shadow: 15px 15px 15px rgb(184, 184, 184);
 }

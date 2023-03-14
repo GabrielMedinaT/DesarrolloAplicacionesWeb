@@ -6,7 +6,7 @@ const UsuariosUnicos = ({ users}) => {
 
   return (
       <div className='nick'>
-              <h3>{users}</h3>
+              <h2>{users}</h2>
           
     </div>
   )

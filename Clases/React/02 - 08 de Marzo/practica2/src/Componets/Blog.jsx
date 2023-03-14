@@ -41,11 +41,16 @@ const Blog = () => {
         autor: autor + " ",
         fecha: new Date().toLocaleDateString() + " ",
         mensaje: entrada + " "
-    }])}
+    }]
+        )
+        setAutor("");
+        setEntrada("");
+    }
 
     return(
     
-<div className="contenedor">
+        <div className="contenedor">
+            <div className="dentrocontenedor">
         <form onSubmit={nuevaEntrada}
             className="formulario">
         <label htmlFor="nombre">Autor</label>
@@ -65,7 +70,8 @@ const Blog = () => {
         value={entrada}
         />
         <button type="submit">Enviar</button>
-            </form>
+                </form>
+            </div>
         <h2 className='large'>Post mas recientes</h2>
             <ul className='largo'>
 				{posts.map((post) => {
