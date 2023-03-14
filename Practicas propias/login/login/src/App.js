@@ -3,15 +3,15 @@ import { useState } from "react";
 
 function App() {
   const usuarios = [
-    { usuario: "Pepe", contraseña: "casa" },
-    { usuario: "Ana", contraseña: "parque" },
-    { usuario: "Luis", contraseña: "playa" },
-    { usuario: "Carmelo", contraseña: "montaña" },
+    { usuario: "Pepe", pasword: "casa" },
+    { usuario: "Ana", pasword: "parque" },
+    { usuario: "Luis", pasword: "playa" },
+    { usuario: "Carmelo", pasword: "montaña" },
   ];
-  const comprueba = [];
-  const [usuario, setUsuario] = useState([""]);
-  const [pasword, setPasword] = useState([""]);
-  const [error, setError] = useState(false); //Añadido para el ejercicio 2
+
+  const [usuario, setUsuario] = useState("");
+  const [pasword, setPasword] = useState("");
+  const [error, setError] = useState(false);
 
   const cambioNombre = (e) => {
     e.preventDefault();
@@ -22,35 +22,30 @@ function App() {
     e.preventDefault();
     setPasword(e.target.value);
   };
-  const nuevoUsuario = (e) => {
-    e.preventDefault();
-    comprueba.push({ usuario: usuario, contraseña: pasword });
-  };
   const compruebaUsuario = (e) => {
     e.preventDefault();
-    usuarios.filter((usuario) => {
-      if (usuario.usuario.includes(comprueba.usuario)) {
-        if (usuario.contraseña.includes(comprueba.contraseña)) {
-          alert("Bienvenido");
-        } else {
-          alert("Contraseña incorrecta");
-        }
+    const busca = usuarios.find((u) => u.usuario === usuario);
+    if (busca) {
+      if (busca.pasword === pasword) {
+        alert("Bienvenido");
       } else {
-        alert("Usuario incorrecto");
+        alert("Contraseña incorrecta");
       }
-    });
+    } else {
+      alert("Usuario incorrecto");
+    }
+    setUsuario("");
+    setPasword("");
   };
 
   return (
     <div className="App">
-      <form onSubmit={nuevoUsuario}>
+      <form onSubmit={compruebaUsuario}>
         <label>Usuario</label>
         <input type="text" onChange={cambioNombre} value={usuario} />
         <label>Contraseña</label>
-        <input type="text" onChange={cambioPasword} value={pasword} />
-        <button type="submit" onClick={compruebaUsuario}>
-          Enviar
-        </button>
+        <input type="password" onChange={cambioPasword} value={pasword} />
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );
