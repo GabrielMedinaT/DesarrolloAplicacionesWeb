@@ -2,9 +2,16 @@ import "./App.css";
 import { useState } from "react";
 import Card from "./Componets/Card.jsx";
 import Denegado from "./Componets/Denegado";
-import Formulario from "./Componets/Formulario";
 
 function App() {
+  function pasar() {
+    if (pasa) {
+      return <Card />;
+    } else {
+      return <Denegado />;
+    }
+  }
+  let pasa = false;
   const usuarios = [
     { usuario: "Pepe", pasword: "casa" },
     { usuario: "Ana", pasword: "parque" },
@@ -29,11 +36,16 @@ function App() {
     if (busca) {
       if (busca.pasword === pasword) {
         alert("Bienvenido");
+        pasa = true;
+        return pasar();
       } else {
         alert("Contraseña incorrecta");
+        pasa = false;
+        return <Denegado />;
       }
     } else {
       alert("Usuario incorrecto");
+      pasa = false;
     }
     setUsuario("");
     setPasword("");
@@ -48,6 +60,7 @@ function App() {
         <input type="password" onChange={cambioPasword} value={pasword} />
         <button type="submit">Enviar</button>
       </form>
+      {pasar()}
     </div>
   );
 }
