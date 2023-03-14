@@ -23,35 +23,30 @@ function App() {
     setPasword(e.target.value);
   };
   const compruebaUsuario = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const busca = usuarios.find((u) => u.usuario === usuario);
-
     if (busca) {
       if (busca.pasword === pasword) {
-        return <Card />;
-        // alert("Bienvenido");
+        alert("Bienvenido");
       } else {
-        return <Denegado />;
+        alert("Contraseña incorrecta");
       }
     } else {
-      return <Denegado />;
+      alert("Usuario incorrecto");
     }
-    // setUsuario("");
-    // setPasword("");
+    setUsuario("");
+    setPasword("");
   };
 
   return (
     <div className="App">
-      <form onChange={compruebaUsuario}>
+      <form onSubmit={compruebaUsuario}>
         <label>Usuario</label>
         <input type="text" onChange={cambioNombre} value={usuario} />
         <label>Contraseña</label>
         <input type="password" onChange={cambioPasword} value={pasword} />
-        <button type="submit" onClick={compruebaUsuario}>
-          Enviar
-        </button>
+        <button type="submit">Enviar</button>
       </form>
-      {compruebaUsuario()}
     </div>
   );
 }
