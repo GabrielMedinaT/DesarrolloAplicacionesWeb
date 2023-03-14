@@ -11,11 +11,9 @@ function App() {
 
   const [usuario, setUsuario] = useState("");
   const [pasword, setPasword] = useState("");
-  const [error, setError] = useState(false);
 
   const cambioNombre = (e) => {
     e.preventDefault();
-    setError(false);
     setUsuario(e.target.value);
   };
   const cambioPasword = (e) => {
